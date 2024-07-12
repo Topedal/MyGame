@@ -1,0 +1,23 @@
+#config_version=6
+
+slide_player:                   #the GMC slides
+  mode_base_started: base 
+  #  expire: 5s
+    # - time: 0
+      # slides: awesome_slide
+      
+ 
+# show_player: 
+    # mode_attract_started.1:     # the LED shows 
+      # show_attract:
+        # speed: 6 
+  
+sound_player:
+    mode_base_started.1:
+      niceness:
+        bus: music
+        fade_in: 500ms
+        fade_out: 1s
+    #drop_targets_complete: small_explosion_one  
+    
+

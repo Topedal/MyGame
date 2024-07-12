@@ -1,0 +1,176 @@
+#config_version=6
+         
+    # OPP switch numbers are Card-point.
+    #   point numbers for _direct_ inputs they are 0..7 wing 0, 8..15 wing 1, 16..23 wing 2, 24..31 wing 3
+    #   if it's a solenoid / neo wing then must be wing 0
+    #     inputs are x-0-1, x-0-2, x-0-3. the neo output would be x-0-4, but see the way to address in lights:
+    #     solenoids are x-0-0 .. x-0-3  for wing 0 
+    #   point numbers for the switch matrix are 32..39 col 0, 40..47 col 1, etc  88..95 col 7
+    #     in STM32 matrix stobes must be on wing 2, returns on wing 3
+    #     "normal" WMS matrix is active LOW ie cols are driven low, diodes point to cols
+    #     the OPP STM32 config.py file would be;
+    #       wingCfg = [ [ rs232Intf.WING_NEO_SOL, rs232Intf.WING_SOL, rs232Intf.WING_SW_MATRIX_OUT_LOW, rs232Intf.WING_SW_MATRIX_IN ] ]
+    
+
+switches:          
+  # direct switches
+  s_dir1:
+    number: 0-0-1
+    tags: left_flipper
+  s_dir2:
+    number: 0-0-2
+    tags: right_flipper
+  s_dir3:
+    number: 0-0-3
+# s_dir4: 
+  s_dir4:            # to align with pcb markings!
+#   number: 0-0-4      # not avail as this is the neo output
+    number: 0-0-8      # note the numbering skip
+  s_dir5:
+    number: 0-0-9
+  s_dir6:
+    number: 0-0-10
+    tags: start
+  s_dir7:
+    number: 0-0-11
+
+
+  # switch matrix
+                     #c0 for front of cab. start / coin / tilt / service etc
+  s_r0c0:              # start
+    number: 0-0-32
+    #tags: start
+  s_r1c0:              #
+    number: 0-0-33
+  s_r2c0:
+    number: 0-0-34
+  s_r3c0:
+    number: 0-0-35
+  s_r4c0:
+    number: 0-0-36
+  s_r5c0:
+    number: 0-0-37
+  s_r6c0:
+    number: 0-0-38
+  s_r7c0:
+    number: 0-0-39
+      
+  s_r0c1:              # bd_drain
+    number: 0-0-40
+  s_r1c1:
+    number: 0-0-41
+  s_r2c1:              # left outlane
+    number: 0-0-42
+    tags: playfield_active
+  s_r3c1:
+    number: 0-0-43
+  s_r4c1:
+    number: 0-0-44
+  s_r5c1:
+    number: 0-0-45
+  s_r6c1:
+    number: 0-0-46
+  s_r7c1:
+    number: 0-0-47
+    
+  s_r0c2:
+    number: 0-0-48
+  s_r1c2:
+    number: 0-0-49
+  s_r2c2:
+    number: 0-0-50
+  s_r3c2:
+    number: 0-0-51
+  s_r4c2:
+    number: 0-0-52
+  s_r5c2:
+    number: 0-0-53
+  s_r6c2:
+    number: 0-0-54
+  s_r7c2:
+    number: 0-0-55
+    
+  s_r0c3:
+    number: 0-0-56
+  s_r1c3:
+    number: 0-0-57
+  s_r2c3:
+    number: 0-0-58
+  s_r3c3:
+    number: 0-0-59
+  s_r4c3:
+    number: 0-0-60
+  s_r5c3:
+    number: 0-0-61
+  s_r6c3:
+    number: 0-0-62
+  s_r7c3:
+    number: 0-0-63
+    
+  s_r0c4:
+    number: 0-0-64
+  s_r1c4:
+    number: 0-0-65
+  s_r2c4:
+    number: 0-0-66
+  s_r3c4:
+    number: 0-0-67
+  s_r4c4:
+    number: 0-0-68
+  s_r5c4:
+    number: 0-0-69
+  s_r6c4:
+    number: 0-0-70
+  s_r7c4:
+    number: 0-0-71
+    
+  s_r0c5:
+    number: 0-0-72
+  s_r1c5:
+    number: 0-0-73
+  s_r2c5:
+    number: 0-0-74
+  s_r3c5:
+    number: 0-0-75
+  s_r4c5:
+    number: 0-0-76
+  s_r5c5:
+    number: 0-0-77
+  s_r6c5:
+    number: 0-0-78
+  s_r7c5:
+    number: 0-0-79
+    
+  s_r0c6:
+    number: 0-0-80
+  s_r1c6:
+    number: 0-0-81
+  s_r2c6:
+    number: 0-0-82
+  s_r3c6:
+    number: 0-0-83
+  s_r4c6:
+    number: 0-0-84
+  s_r5c6:
+    number: 0-0-85
+  s_r6c6:
+    number: 0-0-86
+  s_r7c6:
+    number: 0-0-87
+    
+  s_r0c7:
+    number: 0-0-88
+  s_r1c7:
+    number: 0-0-89
+  s_r2c7:
+    number: 0-0-90
+  s_r3c7:
+    number: 0-0-91
+  s_r4c7:
+    number: 0-0-92
+  s_r5c7:
+    number: 0-0-93
+  s_r6c7:
+    number: 0-0-94
+  s_r7c7:
+    number: 0-0-95

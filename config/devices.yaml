@@ -1,0 +1,17 @@
+#config_version=6
+
+ball_devices:
+    bd_outhole:
+        ball_switches: s_dir7    #s_r0c1
+        eject_coil: c_0
+        ##eject_targets: bd_plunger_lane
+        #>>eject_targets: bd_plunger
+        eject_targets: playfield           #no plunger lane sw
+        tags: drain, home, trough
+        debug: true
+        #enable_events: machine_reset_phase_3    #not valid here
+        
+    # bd_eject_hole:
+        # ball_switches: 
+        # eject_coil: 
+        # eject_timeout: 2s  

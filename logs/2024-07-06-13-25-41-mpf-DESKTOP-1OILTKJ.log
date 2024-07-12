@@ -1,0 +1,197 @@
+2024-07-06 13:25:41,533 : INFO : root : Loading config.
+2024-07-06 13:25:41,549 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-07-06 13:25:41,549 : INFO : ConfigProcessor : Loading config from cache: C:\Users\David\AppData\Local\Temp\0f25e907705cb5c7ec000247fd732b1d.mpf_cache
+2024-07-06 13:25:41,696 : INFO : ConfigProcessor : Loading config from cache: C:\Users\David\AppData\Local\Temp\505964fe8756136879eadb31f10fc211.mpf_cache
+2024-07-06 13:25:41,696 : INFO : ConfigProcessor : Loading config from cache: C:\Users\David\AppData\Local\Temp\66e58d4b6be7f80574b740dd3de53a24.mpf_cache
+2024-07-06 13:25:41,696 : INFO : ConfigProcessor : Loading config from cache: C:\Users\David\AppData\Local\Temp\505964fe8756136879eadb31f10fc211.mpf_cache
+2024-07-06 13:25:41,696 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev2
+2024-07-06 13:25:41,696 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2024-07-06-13-25-41-mpf-DESKTOP-1OILTKJ.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False, 'full_logfile_path': 'd:\\venv\\mpf\\MyGames\\logs\\2024-07-06-13-25-41-mpf-DESKTOP-1OILTKJ.log'}
+2024-07-06 13:25:41,696 : INFO : Machine : MPF path: d:\venv\mpf\Lib\site-packages\mpf
+2024-07-06 13:25:41,696 : INFO : Machine : Machine path: d:\venv\mpf\MyGames
+2024-07-06 13:25:41,696 : INFO : Machine : Platform: win32
+2024-07-06 13:25:41,696 : INFO : Machine : Python executable location: d:\venv\mpf\Scripts\python.exe
+2024-07-06 13:25:41,696 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2024-07-06 13:25:41,727 : INFO : Machine : Initializing MPF...
+2024-07-06 13:25:42,213 : INFO : OPP : Connecting to COM8 at 115200bps
+2024-07-06 13:25:42,282 : INFO : OPP : Init of OPP board 0 done
+2024-07-06 13:25:42,282 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,335 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,335 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev2', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,335 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev2, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,335 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.19045-SP0', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.19045', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,815 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'd:\\venv\\mpf\\MyGames\\logs\\2024-07-06-13-25-41-mpf-DESKTOP-1OILTKJ.log', 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,831 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2024-07-06 13:25:42,900 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2024-07-06 13:25:42,900 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_r1c1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_r0c1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_r0c0'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_r1c0'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2024-07-06 13:25:42,915 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2024-07-06 13:25:42,984 : INFO : Mode.attract : Started. Priority: 10
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2024-07-06 13:25:42,984 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2024-07-06 13:25:43,053 : INFO : Machine : Starting the main run loop.
+2024-07-06 13:26:54,436 : INFO : SwitchController : <<<<<<< 's_r0c0' active >>>>>>>
+2024-07-06 13:27:00,109 : INFO : SwitchController : <<<<<<< 's_r0c0' inactive >>>>>>>
+2024-07-06 13:27:00,658 : INFO : SwitchController : <<<<<<< 's_r1c0' active >>>>>>>
+2024-07-06 13:27:06,984 : INFO : SwitchController : <<<<<<< 's_r1c0' inactive >>>>>>>
+2024-07-06 13:27:10,017 : INFO : SwitchController : <<<<<<< 's_r0c1' active >>>>>>>
+2024-07-06 13:27:13,814 : INFO : SwitchController : <<<<<<< 's_r0c1' inactive >>>>>>>
+2024-07-06 13:27:14,294 : INFO : SwitchController : <<<<<<< 's_r1c1' active >>>>>>>
+2024-07-06 13:27:17,442 : INFO : SwitchController : <<<<<<< 's_r1c1' inactive >>>>>>>
+2024-07-06 13:27:22,142 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:27:25,131 : INFO : EventManager : Event: ======'flipper_cradle'====== Args={}
+2024-07-06 13:27:25,416 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:27:25,416 : INFO : EventManager : Event: ======'flipper_cradle_release'====== Args={}
+2024-07-06 13:27:25,931 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:27:28,942 : INFO : EventManager : Event: ======'flipper_cradle'====== Args={}
+2024-07-06 13:27:34,808 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:27:34,808 : INFO : EventManager : Event: ======'flipper_cradle_release'====== Args={}
+2024-07-06 13:29:36,815 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:29:38,838 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:29:38,838 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:29:38,838 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:29:39,239 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:39,271 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:39,340 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:39,386 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:39,393 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:42,394 : INFO : EventManager : Event: ======'flipper_cradle'====== Args={}
+2024-07-06 13:29:44,128 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:44,128 : INFO : EventManager : Event: ======'flipper_cradle_release'====== Args={}
+2024-07-06 13:29:44,143 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:44,159 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:48,642 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:48,689 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:48,704 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,275 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,275 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,360 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,445 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,491 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,491 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,708 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,714 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,746 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,777 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,792 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,815 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:49,830 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:49,846 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:50,009 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:50,015 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:50,078 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:50,093 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:50,331 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:50,347 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:50,378 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:50,710 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:51,181 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:51,212 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:51,219 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:51,451 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:51,466 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:51,482 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:51,915 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:51,937 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:51,953 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:52,115 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:52,138 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:52,169 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:52,523 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:52,523 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:52,585 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:52,639 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:53,072 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:53,072 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:53,103 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:53,473 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:53,542 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:53,558 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:53,959 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:53,975 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:54,006 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:54,530 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:54,561 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:54,624 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:54,677 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:54,709 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:55,966 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:55,966 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:29:55,982 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:29:56,483 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:29:58,660 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:29:58,660 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:29:58,744 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:29:58,760 : INFO : SwitchController : <<<<<<< 's_left_flipper' active >>>>>>>
+2024-07-06 13:29:58,845 : INFO : SwitchController : <<<<<<< 's_left_flipper' inactive >>>>>>>
+2024-07-06 13:29:59,039 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:30:01,168 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:30:01,199 : INFO : SwitchController : <<<<<<< 's_right_flipper' active >>>>>>>
+2024-07-06 13:30:01,230 : INFO : SwitchController : <<<<<<< 's_right_flipper' inactive >>>>>>>
+2024-07-06 13:33:18,667 : ERROR : asyncio : Fatal write error on serial transport
+protocol: <asyncio.streams.StreamReaderProtocol object at 0x000001C2484F3550>
+transport: SerialTransport(<ProactorEventLoop running=True closed=False debug=False>, <asyncio.streams.StreamReaderProtocol object at 0x000001C2484F3550>, Serial<id=0x1c2484ed7b0, open=True>(port='COM8', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=0, xonxoff=False, rtscts=False, dsrdtr=False))
+Traceback (most recent call last):
+  File "d:\venv\mpf\Lib\site-packages\serial_asyncio\__init__.py", line 290, in _poll_read
+    if self.serial.in_waiting:
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\venv\mpf\Lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2024-07-06 13:33:19,069 : WARNING : OPP : Serial error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+2024-07-06 13:33:19,069 : INFO : EventManager : Event: ======'serial_error'====== Args={}
+2024-07-06 13:33:19,089 : INFO : Machine : Shutting down...
+2024-07-06 13:33:19,089 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2024-07-06 13:33:19,089 : ERROR : OPP : Stop called on serial connection COM8
+2024-07-06 13:33:19,089 : ERROR : root : ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))
+Traceback (most recent call last):
+  File "d:\venv\mpf\Lib\site-packages\mpf\commands\game.py", line 240, in __init__
+    self.machine.run()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 689, in run
+    self._run_loop()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 789, in _run_loop
+    self._crash_shutdown()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 734, in _crash_shutdown
+    self._do_stop()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 725, in _do_stop
+    self.shutdown()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 755, in shutdown
+    self._platform_stop()
+  File "d:\venv\mpf\Lib\site-packages\mpf\core\machine.py", line 805, in _platform_stop
+    hardware_platform.stop()
+  File "d:\venv\mpf\Lib\site-packages\mpf\platforms\opp\opp.py", line 195, in stop
+    connections.stop()
+  File "d:\venv\mpf\Lib\site-packages\mpf\platforms\base_serial_communicator.py", line 149, in stop
+    self.machine.clock.loop.run_until_complete(self.writer.wait_closed())
+  File "C:\Users\David\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\David\AppData\Local\Programs\Python\Python311\Lib\asyncio\streams.py", line 350, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "d:\venv\mpf\Lib\site-packages\serial_asyncio\__init__.py", line 290, in _poll_read
+    if self.serial.in_waiting:
+       ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\venv\mpf\Lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))

@@ -1,0 +1,124 @@
+#config_version=6
+
+slide_player:                   #the GMC slides
+  mode_attract_started: attract 
+  #  expire: 5s
+    # - time: 0
+      # slides: awesome_slide
+      
+ 
+show_player: 
+    mode_attract_started.1:     # the LED shows 
+      show_attract:
+        speed: 6 
+  
+sound_player:
+    mode_attract_started.2:
+      #attract_background_music:
+      sorry002:
+          bus: music
+          fade_in: 500ms
+          fade_out: 1s
+    #drop_targets_complete: small_explosion_one  
+    
+
+# shows: 
+    # display_loop:
+        # - time: 0
+          # slides: awesome_slide
+        # - time: +3
+          # slides: press_start
+        # - time: +3
+          # slides: mission_pinball
+        # # - time: +6
+          # # slides: GameCard
+        # # - time: +3
+          # # slides: HowTo
+        # # - time: +8
+          # # slides: last_game_score_slide1
+        # # - time: +8
+          # # slides: show_high_scores
+    
+    
+    
+# slides:
+
+    # attract:
+      # widgets:
+      # - type: text
+        # text: WMS Tri Zone
+        # font_size: 50
+      # # transition:
+        # # type: push
+        # # duration: 200s
+        # # direction: left
+      # # - type: text
+        # # text: Mission Pinball Framework
+        # # color: red
+        # # font_size: 60
+        # # bold: true
+        # # y: 400
+
+    # awesome_slide:
+      # widgets:
+      # - type: text
+        # text: WMS Tri Zone
+        # font_size: 50
+      # transition:
+         # type: push
+         # duration: 2s
+         # direction: left
+
+    # press_start:
+      # widgets:
+      # - type: Text
+        # text: PRESS START
+        # font_size: 50
+        # animations:
+          # pre_show_slide:
+            # - property: opacity
+              # value: 0
+              # duration: .5s
+            # - property: opacity
+              # value: 1
+              # duration: .5s
+              # repeat: true
+              
+      # # - type: Text
+        # # text: FREE PLAY - this si fixed
+        # # color: green
+        # # y: 10
+        # # anchor_y: bottom
+      # - type: text
+        # text: "(machine|credits_string)"
+        # y: 100
+  
+      # transition:
+         # type: move_in
+         # duration: 1s
+         # direction: right
+         
+
+    # mission_pinball:
+      # widgets:
+      # - type: Text
+        # text: Mission Pinball Framework
+        # color: red
+        # font_size: 60
+        # bold: true
+        # y: 400
+      # - type: text
+        # text: and
+        # color: c0c0c0
+        # font_size: 20
+        # y: 300
+      # - type: text
+        # text: Open Pinball Project
+        # color: yellow
+        # font_size: 60
+        # bold: true
+        # y: 200
+      # transition:
+         # type: move_in
+         # duration: 1s
+         # direction: top

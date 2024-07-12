@@ -1,0 +1,94 @@
+#config_version=6
+
+# this is d:\venv\mpf\MyGames
+
+hardware:
+  platform: opp
+  driverboards: gen2
+
+opp:
+  ports: COM8   #, COMx
+  #poll_hz: 50   # default is 100
+  chains: 
+    0: COM8
+    # #1: COMx
+    
+# MPF addresses are chain-board-pin, 
+#     for OPP, STM32 on USB the board is always 0, so OPP addresses are chain-0-pin 
+#     First STM32 is chain 0, so addresses are 0-0-pin.  Second STM32 is chain 1, so 1-0-pin  etc
+
+config:    #use this to link to other files
+  - switches.yaml
+  - lights.yaml
+  - coils.yaml
+  - devices.yaml
+  
+# machine:
+  # balls_installed: 1
+  # min_balls: 1 #How few balls can be accounted for before you can start a game
+
+# game:
+  # balls_per_game: 3
+  # max_players: 4
+
+modes:
+  #Add all your mode names here
+  - attract
+  #- base
+  #- etc
+        
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_outhole    #None  # bd_drain   # use None in steps before 8
+    debug: true
+
+flippers:
+  left_flipper:
+    main_coil: c_1     # use physical EOS with dual wound coil
+    #hold_coil: c_1     #c_flipper_left_hold
+    #hold_power: 1.0
+    #use_eos: true
+    activation_switch: s_dir1
+    tags: left_flipper
+    #enable_events: machine_reset_phase_3   #for testing only
+    
+  right_flipper:
+    main_coil: c_2   #
+    activation_switch: s_dir2
+    tags: right_flipper
+    #enable_events: machine_reset_phase_3   
+
+# autofire_coils:
+  # kick_back:
+    # coil: c_3
+    # switch: s_dir3
+    # #enable_events: machine_reset_phase_3
+
+  # left_sling:
+    # coil: c_4
+    # switch: s_dir4
+    # #enable_events: machine_reset_phase_3
+  # right_sling:
+    # coil: c_5
+    # switch: s_dir5
+    # #enable_events: machine_reset_phase_3
+  # pop:
+    # coil: c_6
+    # switch: s_dir6
+    # #enable_events: machine_reset_phase_3
+  # pop2:
+    # coil: c_7
+    # switch: s_dir7
+    # #enable_events: machine_reset_phase_3   
+
+
+    
+    
+#  don't think keyboard works c GMC - use gmc.cfg file
+# keyboard:   #use to drive your game from the computer for testing
+  # z:
+    # switch: s_dir1
+  # "/":
+    # switch: s_dir2    

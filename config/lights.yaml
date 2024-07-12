@@ -1,0 +1,106 @@
+#config_version=6
+       
+# MPF OPP neopixels;
+    #  if it's a solenoid / neo wing then must be wing 0   (for the SPI pin for neo)
+    #    direct inputs are x-0-1, x-0-2, x-0-3. 
+    #    the neo output would be x-0-4, the STM32 pin PB15, which is lost as an input
+  
+lights:
+    # A serial string of WS2812 leds, can support 256 leds  (0-0-0 .. 0-0-255) 
+    #  each visible led is comprised of three individual leds, the r, the g and the b
+    
+    #  this from wing 0, point 4 the PB15 pin
+    
+    # maybe eventually use 2 strings: headbox and playfield
+    # laid out to suit the physical arrangement of the strings
+
+    #playfield string - First STM32, Wing 0, pin 4
+   
+  l_001:
+    start_channel: 0-0-0       #first led in string, this address covers the three individual grb leds
+    subtype: led
+    type: grb                  # WS2812 are grb,  WS2811 are rgb       
+    default_on_color: ffff00
+    tags: lane, laneCl
+        
+  l_002:
+    number: 0-0-1              #  the second physical led in the string
+    type: grb                      
+    default_on_color: ffff00
+        
+  l_003:
+    #number: 0-0-2             # the 3rd led in the chain ie 
+    subtype: led
+    type: grb
+    previous: l_002            # can also use previous to follow chain
+    
+  l_004:
+    #number: 0-0-      
+    subtype: led
+    type: grb
+    previous: l_003
+ 
+  l_005:
+    #number: 0-0-      
+    subtype: led
+    type: grb
+    previous: l_004
+    
+  l_006:
+    #number: 0-0-      
+    subtype: led
+    type: grb
+    previous: l_005
+    
+  l_007:
+    #number: 0-0-      
+    subtype: led
+    type: grb
+    previous: l_006
+    
+  l_008:    
+    subtype: led
+    type: grb
+    previous: l_007
+    
+  l_009:    
+    subtype: led
+    type: grb
+    previous: l_008
+
+  l_010:    
+    subtype: led
+    type: grb
+    previous: l_009
+
+  l_011:    
+    subtype: led
+    type: grb
+    previous: l_010
+
+  l_012:    
+    subtype: led
+    type: grb
+    previous: l_011
+
+  l_013:    
+    subtype: led
+    type: grb
+    previous: l_012
+
+  l_014:    
+    subtype: led
+    type: grb
+    previous: l_013
+
+  l_015:    
+    subtype: led
+    type: grb
+    previous: l_014
+
+  l_016:    
+    subtype: led
+    type: grb
+    previous: l_015
+  
+    

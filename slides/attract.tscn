@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://dskswccewfp3y"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_uhrkp"]
+[ext_resource type="Script" path="res://slides/Label3.gd" id="2_a4jkp"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_vy47i"]
+
+[node name="attract" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_uhrkp")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1912.0
+offset_bottom = 1080.0
+color = Color(0.956007, 0.501449, 0.763048, 1)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 424.0
+offset_top = 112.0
+offset_right = 1207.0
+offset_bottom = 249.0
+theme_override_font_sizes/font_size = 100
+text = "Welcome 2 GMC"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 760.0
+offset_right = 1800.0
+offset_bottom = 791.0
+theme_override_colors/font_color = Color(0, 0.968627, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "v0.1"
+horizontal_alignment = 2
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 384.0
+offset_right = 432.0
+offset_bottom = 432.0
+theme_override_font_sizes/font_size = 25
+text = "location: \\venv\\mpf\\MyGames\\slides"
+script = ExtResource("2_a4jkp")
+
+[node name="ball" type="Label" parent="."]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 704.0
+offset_right = 617.0
+offset_bottom = 784.0
+theme_override_font_sizes/font_size = 150
+text = "\"Ball 1\""
+script = ExtResource("3_vy47i")
+variable_name = "ball"
+template_string = "\"Ball %s\""

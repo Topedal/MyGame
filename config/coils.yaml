@@ -1,0 +1,45 @@
+#config_version=6
+
+    #  if it's a solenoid / neo wing then must be wing 0  (for the SPI pin for neo)
+    #    coils are x-0-0, x-0-1, x-0-2, x-0-3
+    #    inputs are x-0-1, x-0-2, x-0-3. the neo output would be 0-0-4 (which is lost as an input), see the way to address in lights:
+    
+    # if it's a solenoid only;
+    #    on wing 0                     | wing 1             | wing 2              | wing 3
+    #    coils are x-0-0 .. x-0-3      | x-0-4 .. x-0-7     | x-0-8 .. x-0-11     |  x-0-12 .. x-0-15
+    #    inputs are x-0-1 .. x-0-4??   | x-0-8 .. x-0-11    | x-0-16 .. x-0-19    |  x-0-24 .. x-0-27
+      
+coils:
+  c_0:                    #drain eject coil
+    number: 0-0-0
+    allow_enable: true
+
+  c_1:                    #left flipper
+    number: 0-0-1
+    allow_enable: true
+    #default_pulse_ms: 100    #default doesnt make sence as it's a flipper with physical EOS 
+
+  c_2:                    #right flipper
+    number: 0-0-2
+    allow_enable: true
+
+  c_3:
+    number: 0-0-3
+    allow_enable: true  
+
+  c_4:
+    number: 0-0-4
+    allow_enable: true
+
+  c_5:
+    number: 0-0-5
+    allow_enable: true
+
+  c_6:
+    number: 0-0-6
+    allow_enable: true
+
+  c_7:
+    number: 0-0-7
+    allow_enable: true
+    #default_pulse_ms: 255    #range is 0..255
